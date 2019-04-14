@@ -10,7 +10,7 @@ require.config({
     //在打包压缩时将会把include中的模块合并到主文件中
     include: ['css', 'layer', 'toastr','content','jquery','bootstrap'],
     paths: {
-        'hplus': 'hplus',
+        'hcAdmin': 'hcAdmin',
         'contabs':'contabs',
         'content':'content',
          // 以下的包从plugins目录加载
@@ -20,7 +20,6 @@ require.config({
         'slimscroll': 'plugins/slimscroll/jquery.slimscroll.min',
         'toastr': 'plugins/toastr/toastr.min',
         'layer': 'plugins/layer/layer.min',
-        'pace':'plugins/pace/pace.min',
         'jqueryUi':'plugins/jquery-ui/jquery-ui.min',
         'flot':'plugins/flot/jquery.flot',
         'tooltip':'plugins/flot/jquery.flot.tooltip.min',
@@ -37,8 +36,8 @@ require.config({
         'bootstrap': ['jquery'],
         'metisMenu': ['jquery'],
         'slimscroll': ['jquery'],
-        'hplus': ['jquery','metisMenu','slimscroll'],
-        'contabs':['jquery','metisMenu','slimscroll'],
+        'hcAdmin': ['jquery','metisMenu','slimscroll'],
+        'contabs':['jquery'],
         'pace':['jquery'],
         'content':['jquery','bootstrap'],
         'tooltip':['flot'],
@@ -65,7 +64,7 @@ require(['jquery','bootstrap'], function ($,undefined) {
     require.config({paths: paths});
     // 初始化
     $(function () {
-        require(['content'], function (Content) {
+        // require(['content'], function (Content) {
             //加载相应模块
             if (Config.jsname) {
                 require([Config.jsname], function (Controller) {
@@ -75,6 +74,6 @@ require(['jquery','bootstrap'], function ($,undefined) {
                     // 这里可捕获模块加载的错误
                 });
             }
-        });
+        // });
     });
 });

@@ -1,9 +1,7 @@
-/*
- *
- *   H+ - 后台主题UI框架
- *   version 4.9
- *
-*/
+/**
+ * content.js 
+ * 自定义js 公共配置
+ */
 define(['jquery','bootstrap','jqueryUi'],function($,undefined,jqueryUi){
     var Content = {
         init:function(){
@@ -75,5 +73,7 @@ define(['jquery','bootstrap','jqueryUi'],function($,undefined,jqueryUi){
         }
     };
     Content.init();
+    //面板移动
+    Content.WinMove();
     return Content;
 });

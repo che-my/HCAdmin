@@ -59,11 +59,11 @@
         <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="nav-close"><i class="fa fa-times-circle"></i>
             </div>
-            <div class="sidebar-collapse black-bg">
+            <div class="sidebar-collapse">
                 <ul class="nav" id="side-menu">
                     <li class="nav-header">
                         <div class="dropdown profile-element">
-                            <span><img alt="image" class="img-circle" src="./assets/img/profile_small.jpg" /></span>
+                            <span><img alt="image" class="img-circle" src="./assets/img/avatar.jpg" /></span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                 <span class="clear">
                                <span class="block m-t-xs"><strong class="font-bold">HC+Admin</strong></span>
@@ -87,8 +87,7 @@
                         <div class="logo-element">HC+
                         </div>
                     </li>
-                    <!-- 控制面板 open-li-0 data-index="0"-->
-                    <li class="open-li-0">
+                    <li>
                         <a href="#">
                             <i class="fa fa-home"></i>
                             <span class="nav-label">主页</span>
@@ -113,10 +112,10 @@
                         </ul>
 
                     </li>
-                    <li class="open-li-0">
+                    <li>
                         <a class="J_menuItem" href="layouts.html"><i class="fa fa-columns"></i> <span class="nav-label">布局</span></a>
                     </li>
-                    <li class="open-li-0">
+                    <li>
                         <a href="#">
                             <i class="fa fa fa-bar-chart-o"></i>
                             <span class="nav-label">统计图表</span>
@@ -146,10 +145,7 @@
                             </li>
                         </ul>
                     </li>
-                    <!-- 控制面板-->
-
-                    <!-- 系统管理 open-li-1 data-index="1"-->
-                    <li class="open-li-1 hidden">
+                    <li>
                         <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">信箱 </span><span class="label label-warning pull-right">16</span></a>
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="mailbox.html">收件箱</a>
@@ -160,17 +156,14 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="open-li-1 hidden">
+                    <li>
                         <a href="#"><i class="fa fa-cutlery"></i> <span class="nav-label">工具 </span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="form_builder.html">表单构建器</a>
                             </li>
                         </ul>
                     </li>
-                    <!-- 系统管理  -->
-
-                    <!-- 组件管理  open-li-2 data-index="2"-->
-                    <li class="open-li-2 hidden">
+                    <li>
                         <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">表单</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="form_basic.html">基本表单</a>
@@ -211,7 +204,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="open-li-2 hidden">
+                    <li>
                         <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">页面</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="contacts.html">联系人</a>
@@ -302,7 +295,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="open-li-2 hidden">
+                    <li>
                         <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">UI元素</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="typography.html">排版</a>
@@ -375,7 +368,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="open-li-2 hidden">
+                    <li>
                         <a href="#"><i class="fa fa-table"></i> <span class="nav-label">表格</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="table_basic.html">基本表格</a>
@@ -391,7 +384,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="open-li-2 hidden">
+                    <li>
                         <a href="#"><i class="fa fa-picture-o"></i> <span class="nav-label">相册</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="basic_gallery.html">基本图库</a>
@@ -402,12 +395,10 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="open-li-2 hidden">
+                    <li>
                         <a class="J_menuItem" href="css_animation.html"><i class="fa fa-magic"></i> <span class="nav-label">CSS动画</span></a>
                     </li>
-                    <!-- 组件管理 -->
-                    <!-- 插件管理  open-li-3 data-index="3"-->
-                    <li class="open-li-3 hidden">
+                    <li>
                         <a href="#"><i class="fa fa-cutlery"></i> <span class="nav-label">插件 </span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="form_builder.html">插件</a>
@@ -425,7 +416,7 @@
                 <nav class="navbar navbar-static-top black-bg" role="navigation" style="margin-bottom: 0">
                     <div class="navbar-header navbar-collapse collapse">
                         <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
-                        <ul class="nav navbar-nav navbar-top-links navbar-left" id="header-menu">
+                        <!-- <ul class="nav navbar-nav navbar-top-links navbar-left" id="header-menu">
                             <li class="dropdown open">
                                 <a aria-expanded="true" role="button" class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-dashboard"></i> <span>控制面板</span></a>
                             </li>
@@ -444,7 +435,7 @@
                                     <i class="fa fa-certificate"></i> <span>插件管理</span>
                                 </a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                     <ul class="nav navbar-top-links navbar-right">
                         <li class="dropdown">
